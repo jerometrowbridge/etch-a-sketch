@@ -13,9 +13,12 @@ function createGrid() {
     }
 }
 
-
-
-
 const gridButton = document.getElementById("gridButton");
 gridButton.addEventListener('click', createGrid)
 
+function clearGrid() {
+    gridspace.innerHTML = ""
+}
+
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener('click', clearGrid)
