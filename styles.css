@@ -1,0 +1,14 @@
+
+.cell {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#gridspace {
+    display: grid;
+    grid-template: 100px / 100px;
+}
+
+#container {
+    display: flex;
+}
