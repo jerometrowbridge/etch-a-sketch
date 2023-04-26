@@ -35,9 +35,13 @@ function changeButton(e) {
    e.target.classList.add('playing')
 }
 
-function checkNumber(input) {
-    if (input.value > 100) input.value = 0;
-    if (input.value < 0) input.value = 0;
+function checkNumber() {
+    if ((rowCheck.value > 100) || (colCheck.value > 100)) {
+        alert('Please, enter a number less than 101.')
+    };
+    if ((rowCheck.value < 0) || (colCheck.value < 0)) {
+        alert('Please, enter a number greater than -1.')
+    }
 }
 
 const rowCheck = document.getElementById("myRows");
