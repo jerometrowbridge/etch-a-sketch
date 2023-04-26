@@ -12,15 +12,15 @@
     <div class="header"><p class="header-text">Etch-a-Sketch!</p></div>
     <div class="aside">
     <p>Remember your childhood Etch-a-Sketch? This is a computer version! </p><p class="left-text">Create a
-        grid of any size you specify, then hover your mouse over the grid to shade the cells.
+        grid (of up to 100 rows and columns), then hover your mouse over the grid to shade the cells.
     </p>
-    <p>Number of rows: <input type="text" value="8" id="myRows"></p>
-    <p>Number of columns: <input type="text" value="8" id="myColumns"></p>
+    <p>Number of rows: <input type="text" value="16" id="myRows" min="1" max="100"></p>
+    <p>Number of columns: <input type="text" value="16" id="myColumns" min="1" max="100"></p>
     <button type="button" id="gridButton">Create Grid</button>
     <button type="button" id="clearButton">Clear</button>
     </div>
     <div id="gridBox">
-    <div id="gridspace"></div>
+    <div id="gridspace" class="grid"></div>
     </div>
     
     <script type="text/javascript" src="etch.js" defer></script>
